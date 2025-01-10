@@ -629,6 +629,12 @@
                 <version>${revision}</version>
             </dependency>
 
+            <dependency>
+                <groupId>io.wangk.peekaboo</groupId>
+                <artifactId>peekaboo-component-relation</artifactId>
+                <version>${revision}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 

@@ -11,5 +11,61 @@
 
     <artifactId>peekaboo-component-all</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>io.wangk.peekaboo</groupId>
+            <artifactId>peekaboo-component-data-permission</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.wangk.peekaboo</groupId>
+            <artifactId>peekaboo-component-dict</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.wangk.peekaboo</groupId>
+            <artifactId>peekaboo-component-doc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.wangk.peekaboo</groupId>
+            <artifactId>peekaboo-component-encrypt</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.wangk.peekaboo</groupId>
+            <artifactId>peekaboo-component-excel</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.wangk.peekaboo</groupId>
+            <artifactId>peekaboo-component-job</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.wangk.peekaboo</groupId>
+            <artifactId>peekaboo-component-mybatis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.wangk.peekaboo</groupId>
+            <artifactId>peekaboo-component-record</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.wangk.peekaboo</groupId>
+            <artifactId>peekaboo-component-relation</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.wangk.peekaboo</groupId>
+            <artifactId>peekaboo-component-satoken</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.wangk.peekaboo</groupId>
+            <artifactId>peekaboo-component-tenant</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.wangk.peekaboo</groupId>
+            <artifactId>peekaboo-component-translation</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.wangk.peekaboo</groupId>
+            <artifactId>peekaboo-component-web</artifactId>
+        </dependency>
+
+    </dependencies>
+
 
 </project>
