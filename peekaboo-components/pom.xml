@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>io.wangk.peekaboo</groupId>
+        <artifactId>peekaboo</artifactId>
+        <version>${revision}</version>
+    </parent>
+
+    <artifactId>peekaboo-components</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>peekboo-component-all</module>
+        <module>peekboo-component-data-permission</module>
+        <module>peekboo-component-dict</module>
+        <module>peekboo-component-doc</module>
+        <module>peekboo-component-encrypt</module>
+        <module>peekboo-component-excel</module>
+        <module>peekboo-component-job</module>
+        <module>peekboo-component-mybatis</module>
+        <module>peekboo-component-record</module>
+        <module>peekboo-component-relation</module>
+        <module>peekboo-component-satoken</module>
+        <module>peekboo-component-tenant</module>
+        <module>peekboo-component-translation</module>
+        <module>peekboo-component-web</module>
+    </modules>
+
+
+</project>
