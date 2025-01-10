@@ -6,7 +6,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
 /**
- * @author qinyujie
+ * @author wangk
  */
 public abstract class AbstractExceptionAliasRegisterConfig implements ApplicationContextAware {
 

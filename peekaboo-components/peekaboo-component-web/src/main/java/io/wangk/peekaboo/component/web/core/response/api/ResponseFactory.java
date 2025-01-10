@@ -6,8 +6,6 @@ import io.wangk.peekaboo.component.web.core.response.data.ResponseStatus;
 /**
  * ResponseBean的工厂类，用于生成ResponseBean.
  *
- * @author <a href="mailto:943868899@qq.com">Yujie</a>
- * @version 0.1
  */
 public interface ResponseFactory {
 

@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 /**
  * 处理GracefulResponseDataException的异常
  *
- * @author qinyujie
+ * @author wangk
  */
 @Order(190)
 @ControllerAdvice

@@ -12,7 +12,7 @@ import org.springframework.lang.Nullable;
 /**
  * 默认的处理前回调
  *
- * @author qinyujie
+ * @author wangk
  */
 public class DefaultBeforeControllerAdviceProcessImpl implements BeforeControllerAdviceProcess {
 

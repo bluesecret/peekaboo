@@ -6,7 +6,7 @@ import org.springframework.http.ResponseEntity;
 /**
  * 计算异常对应的HTTP处理器
  *
- * @author qinyujie
+ * @author wangk
  */
 public interface ControllerAdviceHttpProcessor {
 

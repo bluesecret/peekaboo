@@ -9,7 +9,7 @@ import org.springframework.http.server.ServerHttpResponse;
 /**
  * 接受异常的处理器
  *
- * @author qinyujie
+ * @author wangk
  */
 public interface BeforeResponseBodyAdviceProcess {
     /**

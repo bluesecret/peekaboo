@@ -52,7 +52,7 @@ import java.util.stream.Collectors;
 /**
  * 默认的全局异常处理
  *
- * @author qinyujie
+ * @author wangk
  */
 @Order(100)
 @ControllerAdvice

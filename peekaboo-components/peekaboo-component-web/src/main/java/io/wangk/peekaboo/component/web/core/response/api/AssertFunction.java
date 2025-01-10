@@ -1,7 +1,7 @@
 package io.wangk.peekaboo.component.web.core.response.api;
 
 /**
- * @author qinyujie
+ * @author wangk
  */
 @FunctionalInterface
 public interface AssertFunction {

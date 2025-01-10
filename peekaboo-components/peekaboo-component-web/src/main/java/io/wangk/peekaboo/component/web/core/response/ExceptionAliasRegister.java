@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * @author qinyujie
+ * @author wangk
  */
 public class ExceptionAliasRegister {
 

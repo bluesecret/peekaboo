@@ -31,7 +31,7 @@ import java.util.*;
 /**
  * 释放异常的ExceptionHandlerExceptionResolver
  *
- * @author qinyujie
+ * @author wangk
  */
 public class ReleaseExceptionHandlerExceptionResolver extends ExceptionHandlerExceptionResolver
         implements ApplicationContextAware, InitializingBean {

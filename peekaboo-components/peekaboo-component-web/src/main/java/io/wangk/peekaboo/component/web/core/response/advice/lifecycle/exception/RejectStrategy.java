@@ -7,7 +7,7 @@ import org.springframework.lang.Nullable;
 /**
  * 拒绝策略，如果异常不匹配，拒绝处理的实现，默认为将异常抛出
  *
- * @author qinyujie
+ * @author wangk
  */
 public interface RejectStrategy {
 

@@ -9,8 +9,6 @@ import jakarta.annotation.Resource;
 /**
  * 提供的默认的ResponseMetaFactory实现.
  *
- * @author <a href="mailto:943868899@qq.com">Yujie</a>
- * @version 0.1
  */
 public class DefaultResponseStatusFactoryImpl implements ResponseStatusFactory {
 

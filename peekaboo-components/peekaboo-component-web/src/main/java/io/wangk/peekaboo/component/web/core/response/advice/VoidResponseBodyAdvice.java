@@ -19,9 +19,6 @@ import java.util.concurrent.CopyOnWriteArrayList;
 /**
  * 空返回值的拦截处理.
  *
- * @author <a href="mailto:943868899@qq.com">Yujie</a>
- * @version 0.1
- * @since 0.1
  */
 @Order(value = 1000)
 @ControllerAdvice

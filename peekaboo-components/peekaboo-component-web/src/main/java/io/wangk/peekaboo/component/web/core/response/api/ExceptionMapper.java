@@ -7,9 +7,6 @@ import java.lang.annotation.*;
 /**
  * 异常映射注解.
  *
- * @author <a href="mailto:943868899@qq.com">Yujie</a>
- * @version 0.3
- * @since 0.3
  */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)

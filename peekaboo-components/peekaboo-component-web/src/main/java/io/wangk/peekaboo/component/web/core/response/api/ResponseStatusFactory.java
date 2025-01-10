@@ -2,10 +2,6 @@ package io.wangk.peekaboo.component.web.core.response.api;
 
 import io.wangk.peekaboo.component.web.core.response.data.ResponseStatus;
 
-/**
- * @author <a href="mailto:qinyujie@gingo.cn">Yujie</a>
- * @version 0.1
- */
 public interface ResponseStatusFactory {
     /**
      * 获得响应成功的ResponseMeta.

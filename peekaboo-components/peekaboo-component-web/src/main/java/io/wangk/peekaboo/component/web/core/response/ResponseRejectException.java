@@ -5,7 +5,7 @@ import io.wangk.peekaboo.common.exception.StatusException;
 /**
  * 拒绝处理的异常
  *
- * @author qinyujie
+ * @author wangk
  */
 public class ResponseRejectException extends StatusException {
 

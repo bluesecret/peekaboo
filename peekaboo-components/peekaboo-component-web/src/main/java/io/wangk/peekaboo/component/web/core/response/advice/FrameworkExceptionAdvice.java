@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 /**
  * Response框架异常处理，处理GracefulException
  *
- * @author qinyujie
+ * @author wangk
  */
 @Order(200)
 @ControllerAdvice

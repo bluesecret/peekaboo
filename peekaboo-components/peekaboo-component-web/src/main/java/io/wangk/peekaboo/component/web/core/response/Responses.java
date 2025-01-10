@@ -12,7 +12,7 @@ import java.util.Map;
 /**
  * Response工具类
  *
- * @author qinyujie
+ * @author wangk
  */
 public class Responses {
 

@@ -23,9 +23,6 @@ import java.util.concurrent.CopyOnWriteArrayList;
 /**
  * 全局返回值处理的自动配置.
  *
- * @author <a href="mailto:943868899@qq.com">Yujie</a>
- * @version 0.1
- * @since 0.1
  */
 @Configuration
 @ConditionalOnProperty(value = ResponseProperties.PREFIX + ".enabled", matchIfMissing = true, havingValue = "true")

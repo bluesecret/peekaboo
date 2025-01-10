@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * 被拒绝的异常继续分发给组件外进行处理，MessageConverterMethodProcessor
  *
- * @author qinyujie
+ * @author wangk
  */
 public class ReleaseMessageConverterMethodProcessor extends HttpEntityMethodProcessor {
 

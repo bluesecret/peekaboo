@@ -7,7 +7,7 @@ import org.springframework.lang.Nullable;
 /**
  * 接受异常的处理器
  *
- * @author qinyujie
+ * @author wangk
  */
 public interface BeforeControllerAdviceProcess {
 

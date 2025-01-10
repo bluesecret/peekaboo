@@ -5,7 +5,7 @@ import io.wangk.peekaboo.component.web.core.response.data.Response;
 /**
  * 异常处理后的回调
  *
- * @author qinyujie
+ * @author wangk
  */
 public interface AfterControllerAdviceProcess {
     /**

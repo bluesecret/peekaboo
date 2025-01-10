@@ -5,7 +5,7 @@ import java.util.Objects;
 
 /**
  * 异常和Handler绑定模型
- * @author qinyujie
+ * @author wangk
  */
 public class ExceptionHandlerModel {
 

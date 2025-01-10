@@ -11,9 +11,6 @@ import java.util.Set;
 /**
  * 核心配置类.
  *
- * @author <a href="mailto:943868899@qq.com">Yujie</a>
- * @version 0.1
- * @since 0.1
  */
 @ConfigurationProperties(ResponseProperties.PREFIX)
 public class ResponseProperties {

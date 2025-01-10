@@ -15,7 +15,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 /**
  * 抽象的异常处理基类
  *
- * @author qinyujie
+ * @author wangk
  */
 public abstract class AbstractControllerAdvice {
 

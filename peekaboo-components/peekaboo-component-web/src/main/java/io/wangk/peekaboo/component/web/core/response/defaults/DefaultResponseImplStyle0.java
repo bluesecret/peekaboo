@@ -10,9 +10,6 @@ import java.util.Collections;
  * 默认的Response实现
  * 包装成统一响应的JavaBean.
  *
- * @author <a href="mailto:943868899@qq.com">Yujie</a>
- * @version 0.1
- * @since 0.1
  */
 public class DefaultResponseImplStyle0 implements Response {
 

@@ -3,7 +3,7 @@ package io.wangk.peekaboo.component.web.core.response.data;
 /**
  * 外部异常配置
  *
- * @author qinyujie
+ * @author wangk
  */
 public class ExceptionAliasConfig {
 

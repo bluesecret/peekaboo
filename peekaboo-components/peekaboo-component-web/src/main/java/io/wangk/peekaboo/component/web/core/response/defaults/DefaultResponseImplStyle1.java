@@ -7,7 +7,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.util.Collections;
 
 /**
- * @author qinyujie
+ * @author wangk
  */
 public class DefaultResponseImplStyle1 implements Response {
 

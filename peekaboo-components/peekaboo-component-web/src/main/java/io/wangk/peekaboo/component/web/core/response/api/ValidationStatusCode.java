@@ -7,7 +7,7 @@ import java.lang.annotation.*;
 /**
  * 指定参数校验的异常码
  *
- * @author qinyujie
+ * @author wangk
  */
 @Target({ElementType.TYPE, ElementType.FIELD, ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)

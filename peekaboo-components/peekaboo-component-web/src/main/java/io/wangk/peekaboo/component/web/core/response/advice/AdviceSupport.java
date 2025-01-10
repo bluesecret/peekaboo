@@ -19,7 +19,7 @@ import java.util.Set;
 /**
  * Advice的工具类
  *
- * @author qinyujie
+ * @author wangk
  */
 public class AdviceSupport {
 

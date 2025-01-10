@@ -7,7 +7,7 @@ import org.springframework.lang.Nullable;
 /**
  * 处理之前需要判断是否需要处理
  *
- * @author qinyujie
+ * @author wangk
  */
 public interface ControllerAdvicePredicate {
 

@@ -8,7 +8,7 @@ import org.springframework.lang.Nullable;
 /**
  * 异常处理器
  *
- * @author qinyujie
+ * @author wangk
  */
 public interface ControllerAdviceProcessor {
 

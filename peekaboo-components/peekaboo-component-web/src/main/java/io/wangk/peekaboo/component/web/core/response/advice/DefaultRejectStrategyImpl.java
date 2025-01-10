@@ -24,7 +24,7 @@ import java.util.concurrent.CopyOnWriteArraySet;
 /**
  * 如果异常不匹配，尝试寻找符合的异常处理
  *
- * @author qinyujie
+ * @author wangk
  */
 public class DefaultRejectStrategyImpl implements RejectStrategy {
 

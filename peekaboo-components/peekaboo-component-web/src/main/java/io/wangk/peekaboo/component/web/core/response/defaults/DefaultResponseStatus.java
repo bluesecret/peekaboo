@@ -6,9 +6,6 @@ import io.wangk.peekaboo.component.web.core.response.data.ResponseStatus;
 /**
  * 默认的ResponseStatus实现
  *
- * @author <a href="mailto:943868899@qq.com">Yujie</a>
- * @version 0.1
- * @since 0.1
  */
 public class DefaultResponseStatus implements ResponseStatus {
 

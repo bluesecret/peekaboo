@@ -1,9 +1,5 @@
 package io.wangk.peekaboo.component.web.core.response.data;
 
-/**
- * @author <a href="mailto:qinyujie@gingo.cn">Yujie</a>
- * @version 0.1
- */
 public interface Response {
 
     /**
