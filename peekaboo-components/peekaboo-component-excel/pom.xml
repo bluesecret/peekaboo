@@ -9,7 +9,7 @@
         <version>${revision}</version>
     </parent>
 
-    <artifactId>peekboo-component-web</artifactId>
+    <artifactId>peekaboo-component-excel</artifactId>
 
 
 </project>

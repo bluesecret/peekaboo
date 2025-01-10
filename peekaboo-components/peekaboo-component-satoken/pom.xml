@@ -9,7 +9,7 @@
         <version>${revision}</version>
     </parent>
 
-    <artifactId>peekboo-component-encrypt</artifactId>
+    <artifactId>peekaboo-component-satoken</artifactId>
 
 
 </project>

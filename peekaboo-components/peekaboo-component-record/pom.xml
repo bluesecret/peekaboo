@@ -9,7 +9,7 @@
         <version>${revision}</version>
     </parent>
 
-    <artifactId>peekboo-component-relation</artifactId>
+    <artifactId>peekaboo-component-record</artifactId>
 
 
 </project>

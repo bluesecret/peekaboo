@@ -9,7 +9,7 @@
         <version>${revision}</version>
     </parent>
 
-    <artifactId>peekboo-component-data-permission</artifactId>
+    <artifactId>peekaboo-component-tenant</artifactId>
 
 
 </project>

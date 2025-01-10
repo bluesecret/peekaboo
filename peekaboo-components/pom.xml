@@ -12,20 +12,20 @@
     <artifactId>peekaboo-components</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>peekboo-component-all</module>
-        <module>peekboo-component-data-permission</module>
-        <module>peekboo-component-dict</module>
-        <module>peekboo-component-doc</module>
-        <module>peekboo-component-encrypt</module>
-        <module>peekboo-component-excel</module>
-        <module>peekboo-component-job</module>
-        <module>peekboo-component-mybatis</module>
-        <module>peekboo-component-record</module>
-        <module>peekboo-component-relation</module>
-        <module>peekboo-component-satoken</module>
-        <module>peekboo-component-tenant</module>
-        <module>peekboo-component-translation</module>
-        <module>peekboo-component-web</module>
+        <module>peekaboo-component-all</module>
+        <module>peekaboo-component-data-permission</module>
+        <module>peekaboo-component-dict</module>
+        <module>peekaboo-component-doc</module>
+        <module>peekaboo-component-encrypt</module>
+        <module>peekaboo-component-excel</module>
+        <module>peekaboo-component-job</module>
+        <module>peekaboo-component-mybatis</module>
+        <module>peekaboo-component-record</module>
+        <module>peekaboo-component-relation</module>
+        <module>peekaboo-component-satoken</module>
+        <module>peekaboo-component-tenant</module>
+        <module>peekaboo-component-translation</module>
+        <module>peekaboo-component-web</module>
     </modules>
 
 
