@@ -1,0 +1,3 @@
+io.wangk.peekaboo.component.web.config.WebAutoConfiguration
+io.wangk.peekaboo.component.web.core.response.AutoConfig
+io.wangk.peekaboo.component.web.core.xss.config.XssAutoConfiguration
