@@ -11,5 +11,25 @@
 
     <artifactId>peekaboo-component-data-permission</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>io.wangk.peekaboo</groupId>
+            <artifactId>peekaboo-common</artifactId>
+        </dependency>
+
+        <!-- Web 相关 -->
+        <dependency>
+            <groupId>io.wangk.peekaboo</groupId>
+            <artifactId>peekaboo-component-satoken</artifactId>
+            <optional>true</optional> <!-- 可选，如果使用 DeptDataPermissionRule 必须提供 -->
+        </dependency>
+
+        <!-- DB 相关 -->
+        <dependency>
+            <groupId>io.wangk.peekaboo</groupId>
+            <artifactId>peekaboo-component-mybatis</artifactId>
+        </dependency>
+    </dependencies>
+
 
 </project>
