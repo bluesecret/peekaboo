@@ -1,0 +1,9 @@
+# Maven
+/mvnw text eol=lf
+
+# Match the .editorconfig
+*           text=auto eol=lf
+
+# Scripts
+*.bat       text eol=crlf
+*.sh        text eol=lf
