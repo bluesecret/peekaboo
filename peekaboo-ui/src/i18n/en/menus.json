@@ -1,0 +1,20 @@
+{
+  "openForm": "CRUD",
+
+  "home": "Home",
+  "dashboard": "Dashboard",
+  "userCenter": "User Center",
+
+  "sysManagement": "System Manage",
+  "sysUser": "User Manage",
+  "sysRole": "Role Manage",
+  "sysDept": "Department Manage",
+  "sysMenu": "Menu Manage",
+  "sysPost": "Post Manage",
+  "sysDict": "Dict Manage",
+  "sysDict:dictData": "DictData Manage",
+
+  "sysMonitor": "System Monitor",
+  "sysLog": "System Log",
+  "sysScheduledTask": "Scheduled Task"
+}

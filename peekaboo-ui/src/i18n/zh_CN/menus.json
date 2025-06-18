@@ -1,0 +1,17 @@
+{
+  "home": "首页",
+  "dashboard": "仪表盘",
+  "userCenter": "个人中心",
+  "sysManagement": "系统管理",
+  "sysUser": "用户管理",
+  "sysRole": "角色管理",
+  "sysDept": "部门管理",
+  "sysMenu": "菜单管理",
+  "sysPost": "岗位管理",
+  "sysDict": "字典管理",
+  "sysDict:dictData": "字典数据",
+  "sysMonitor": "系统监控",
+  "sysLog": "系统日志",
+  "sysScheduledTask": "定时任务",
+  "openForm": "CRUD"
+}

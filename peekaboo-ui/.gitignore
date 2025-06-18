@@ -1,0 +1,9 @@
+node_modules
+.vscode
+.DS_Store
+dist
+dist-ssr
+dist.zip
+dist.7z
+*.local
+.idea
