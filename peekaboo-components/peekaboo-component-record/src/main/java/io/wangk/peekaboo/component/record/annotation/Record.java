@@ -1,7 +1,6 @@
 package io.wangk.peekaboo.component.record.annotation;
 
 import io.wangk.peekaboo.component.record.enums.BusinessType;
-import io.wangk.peekaboo.component.record.enums.OperatorType;
 
 import java.lang.annotation.*;
 
@@ -17,7 +16,6 @@ public @interface Record {
 
     /**
      *  描述
-     * @return
      */
     String value() default "";
 
@@ -28,7 +26,6 @@ public @interface Record {
 
     /**
      * 是否打印日志
-     * @return
      */
     boolean logging() default false;
 
