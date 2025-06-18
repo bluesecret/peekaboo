@@ -14,10 +14,6 @@
     <dependencies>
         <dependency>
             <groupId>io.wangk.peekaboo</groupId>
-            <artifactId>peekaboo-component-all</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.wangk.peekaboo</groupId>
             <artifactId>peekaboo-server-admin</artifactId>
         </dependency>
     </dependencies>

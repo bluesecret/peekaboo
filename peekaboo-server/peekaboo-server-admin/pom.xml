@@ -11,4 +11,11 @@
 
     <artifactId>peekaboo-server-admin</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>io.wangk.peekaboo</groupId>
+            <artifactId>peekaboo-component-all</artifactId>
+        </dependency>
+    </dependencies>
+
 </project>

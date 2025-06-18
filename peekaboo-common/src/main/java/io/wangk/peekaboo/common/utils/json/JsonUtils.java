@@ -1,5 +1,6 @@
 package io.wangk.peekaboo.common.utils.json;
 
+import cn.hutool.core.lang.Dict;
 import cn.hutool.core.util.ArrayUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.json.JSONUtil;
@@ -9,7 +10,9 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.databind.exc.MismatchedInputException;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import io.wangk.peekaboo.common.utils.StringUtils;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 
@@ -59,6 +62,20 @@ public class JsonUtils {
     @SneakyThrows
     public static String toJsonPrettyString(Object object) {
         return objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(object);
+    }
+
+    public static Dict parseMap(String text) {
+        if (StringUtils.isBlank(text)) {
+            return null;
+        }
+        try {
+            return objectMapper.readValue(text, objectMapper.getTypeFactory().constructType(Dict.class));
+        } catch (MismatchedInputException e) {
+            // 类型不匹配说明不是json
+            return null;
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public static <T> T parseObject(String text, Class<T> clazz) {
