@@ -50,14 +50,15 @@ public class SpringDocAutoConfiguration {
         openApi.externalDocs(properties.getExternalDocs());
         openApi.tags(properties.getTags());
         openApi.paths(properties.getPaths());
-        openApi.components(properties.getComponents());
-        Set<String> keySet = properties.getComponents().getSecuritySchemes().keySet();
-        List<SecurityRequirement> list = new ArrayList<>();
-        SecurityRequirement securityRequirement = new SecurityRequirement();
-        keySet.forEach(securityRequirement::addList);
-        list.add(securityRequirement);
-        openApi.security(list);
-
+        if (properties.getComponents() != null) {
+            openApi.components(properties.getComponents());
+            Set<String> keySet = properties.getComponents().getSecuritySchemes().keySet();
+            List<SecurityRequirement> list = new ArrayList<>();
+            SecurityRequirement securityRequirement = new SecurityRequirement();
+            keySet.forEach(securityRequirement::addList);
+            list.add(securityRequirement);
+            openApi.security(list);
+        }
         return openApi;
     }
 
@@ -120,7 +121,7 @@ public class SpringDocAutoConfiguration {
                                          Optional<List<ServerBaseUrlCustomizer>> serverBaseUrlCustomizers,
                                          Optional<JavadocProvider> javadocProvider) {
         return new OpenAPIService(openAPI, securityParser, springDocConfigProperties,
-                propertyResolverUtils, openApiBuilderCustomizers, serverBaseUrlCustomizers, javadocProvider);
+            propertyResolverUtils, openApiBuilderCustomizers, serverBaseUrlCustomizers, javadocProvider);
     }
 
 }

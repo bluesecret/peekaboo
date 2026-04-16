@@ -22,8 +22,13 @@ public class LoginUserHolder {
 
 
     public static void login(Long userId, String username, Long deptId, String deptName, String tenantId) {
-        LoginUser loginUser = new LoginUser();
-        loginUser.setUserId(userId).setUsername(username).setDeptId(deptId).setDeptName(deptName).setTenantId(tenantId);
+        LoginUser loginUser = LoginUser.builder()
+            .userId(userId)
+            .username(username)
+            .deptId(deptId)
+            .deptName(deptName)
+            .tenantId(tenantId)
+            .build();
         login(loginUser);
     }
 
@@ -35,11 +40,11 @@ public class LoginUserHolder {
      */
     public static void login(LoginUser loginUser) {
         StpUtil.login(loginUser.getUserId(),
-                SaLoginConfig.setExtra(TENANT_KEY, loginUser.getTenantId())
-                        .setExtra(USER_KEY, loginUser.getUserId())
-                        .setExtra(USER_NAME_KEY, loginUser.getUsername())
-                        .setExtra(DEPT_KEY, loginUser.getDeptId())
-                        .setExtra(DEPT_NAME_KEY, loginUser.getDeptName())
+            SaLoginConfig.setExtra(TENANT_KEY, loginUser.getTenantId())
+                .setExtra(USER_KEY, loginUser.getUserId())
+                .setExtra(USER_NAME_KEY, loginUser.getUsername())
+                .setExtra(DEPT_KEY, loginUser.getDeptId())
+                .setExtra(DEPT_NAME_KEY, loginUser.getDeptName())
         );
     }
 
