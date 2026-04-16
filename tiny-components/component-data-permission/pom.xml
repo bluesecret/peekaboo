@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>io.wangk.peekaboo</groupId>
+        <groupId>io.wangk.tiny</groupId>
         <artifactId>tiny-components</artifactId>
         <version>${revision}</version>
     </parent>
@@ -13,20 +13,20 @@
 
     <dependencies>
         <dependency>
-            <groupId>io.wangk.peekaboo</groupId>
+            <groupId>io.wangk.tiny</groupId>
             <artifactId>tiny-common</artifactId>
         </dependency>
 
         <!-- Web 相关 -->
         <dependency>
-            <groupId>io.wangk.peekaboo</groupId>
+            <groupId>io.wangk.tiny</groupId>
             <artifactId>component-satoken</artifactId>
             <optional>true</optional> <!-- 可选，如果使用 DeptDataPermissionRule 必须提供 -->
         </dependency>
 
         <!-- DB 相关 -->
         <dependency>
-            <groupId>io.wangk.peekaboo</groupId>
+            <groupId>io.wangk.tiny</groupId>
             <artifactId>component-mybatis</artifactId>
         </dependency>
     </dependencies>

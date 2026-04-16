@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>io.wangk.peekaboo</groupId>
+        <groupId>io.wangk.tiny</groupId>
         <artifactId>tiny-components</artifactId>
         <version>${revision}</version>
     </parent>
@@ -13,55 +13,55 @@
 
     <dependencies>
         <dependency>
-            <groupId>io.wangk.peekaboo</groupId>
+            <groupId>io.wangk.tiny</groupId>
             <artifactId>component-data-permission</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.wangk.peekaboo</groupId>
+            <groupId>io.wangk.tiny</groupId>
             <artifactId>component-dict</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.wangk.peekaboo</groupId>
+            <groupId>io.wangk.tiny</groupId>
             <artifactId>component-doc</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.wangk.peekaboo</groupId>
+            <groupId>io.wangk.tiny</groupId>
             <artifactId>component-encrypt</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.wangk.peekaboo</groupId>
+            <groupId>io.wangk.tiny</groupId>
             <artifactId>component-excel</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.wangk.peekaboo</groupId>
+            <groupId>io.wangk.tiny</groupId>
             <artifactId>component-job</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.wangk.peekaboo</groupId>
+            <groupId>io.wangk.tiny</groupId>
             <artifactId>component-mybatis</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.wangk.peekaboo</groupId>
+            <groupId>io.wangk.tiny</groupId>
             <artifactId>component-record</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.wangk.peekaboo</groupId>
+            <groupId>io.wangk.tiny</groupId>
             <artifactId>component-relation</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.wangk.peekaboo</groupId>
+            <groupId>io.wangk.tiny</groupId>
             <artifactId>component-satoken</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.wangk.peekaboo</groupId>
+            <groupId>io.wangk.tiny</groupId>
             <artifactId>component-tenant</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.wangk.peekaboo</groupId>
+            <groupId>io.wangk.tiny</groupId>
             <artifactId>component-translation</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.wangk.peekaboo</groupId>
+            <groupId>io.wangk.tiny</groupId>
             <artifactId>component-web</artifactId>
         </dependency>
 
