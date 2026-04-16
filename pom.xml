@@ -9,9 +9,9 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>peekaboo-components</module>
-        <module>peekaboo-server</module>
-        <module>peekaboo-common</module>
+        <module>tiny-components</module>
+        <module>tiny-server</module>
+        <module>tiny-common</module>
     </modules>
 
     <properties>
@@ -534,103 +534,96 @@
             <!-- peekaboo -->
             <dependency>
                 <groupId>io.wangk.peekaboo</groupId>
-                <artifactId>peekaboo-common</artifactId>
+                <artifactId>tiny-common</artifactId>
                 <version>${revision}</version>
             </dependency>
 
             <dependency>
                 <groupId>io.wangk.peekaboo</groupId>
-                <artifactId>peekaboo-app</artifactId>
+                <artifactId>server-app</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.wangk.peekaboo</groupId>
+                <artifactId>component-all</artifactId>
                 <version>${revision}</version>
             </dependency>
 
             <dependency>
                 <groupId>io.wangk.peekaboo</groupId>
-                <artifactId>peekaboo-server-admin</artifactId>
+                <artifactId>component-web</artifactId>
                 <version>${revision}</version>
             </dependency>
 
             <dependency>
                 <groupId>io.wangk.peekaboo</groupId>
-                <artifactId>peekaboo-component-all</artifactId>
+                <artifactId>component-doc</artifactId>
                 <version>${revision}</version>
             </dependency>
 
             <dependency>
                 <groupId>io.wangk.peekaboo</groupId>
-                <artifactId>peekaboo-component-web</artifactId>
+                <artifactId>component-satoken</artifactId>
                 <version>${revision}</version>
             </dependency>
 
             <dependency>
                 <groupId>io.wangk.peekaboo</groupId>
-                <artifactId>peekaboo-component-doc</artifactId>
+                <artifactId>component-mybatis</artifactId>
                 <version>${revision}</version>
             </dependency>
 
             <dependency>
                 <groupId>io.wangk.peekaboo</groupId>
-                <artifactId>peekaboo-component-satoken</artifactId>
+                <artifactId>component-data-permission</artifactId>
                 <version>${revision}</version>
             </dependency>
 
             <dependency>
                 <groupId>io.wangk.peekaboo</groupId>
-                <artifactId>peekaboo-component-mybatis</artifactId>
+                <artifactId>component-tenant</artifactId>
                 <version>${revision}</version>
             </dependency>
 
             <dependency>
                 <groupId>io.wangk.peekaboo</groupId>
-                <artifactId>peekaboo-component-data-permission</artifactId>
+                <artifactId>component-job</artifactId>
                 <version>${revision}</version>
             </dependency>
 
             <dependency>
                 <groupId>io.wangk.peekaboo</groupId>
-                <artifactId>peekaboo-component-tenant</artifactId>
+                <artifactId>component-dict</artifactId>
                 <version>${revision}</version>
             </dependency>
 
             <dependency>
                 <groupId>io.wangk.peekaboo</groupId>
-                <artifactId>peekaboo-component-job</artifactId>
+                <artifactId>component-excel</artifactId>
                 <version>${revision}</version>
             </dependency>
 
             <dependency>
                 <groupId>io.wangk.peekaboo</groupId>
-                <artifactId>peekaboo-component-dict</artifactId>
+                <artifactId>component-encrypt</artifactId>
                 <version>${revision}</version>
             </dependency>
 
             <dependency>
                 <groupId>io.wangk.peekaboo</groupId>
-                <artifactId>peekaboo-component-excel</artifactId>
+                <artifactId>component-record</artifactId>
                 <version>${revision}</version>
             </dependency>
 
             <dependency>
                 <groupId>io.wangk.peekaboo</groupId>
-                <artifactId>peekaboo-component-encrypt</artifactId>
+                <artifactId>component-translation</artifactId>
                 <version>${revision}</version>
             </dependency>
 
             <dependency>
                 <groupId>io.wangk.peekaboo</groupId>
-                <artifactId>peekaboo-component-record</artifactId>
-                <version>${revision}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>io.wangk.peekaboo</groupId>
-                <artifactId>peekaboo-component-translation</artifactId>
-                <version>${revision}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>io.wangk.peekaboo</groupId>
-                <artifactId>peekaboo-component-relation</artifactId>
+                <artifactId>component-relation</artifactId>
                 <version>${revision}</version>
             </dependency>
 

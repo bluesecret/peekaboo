@@ -1,5 +1,6 @@
 # Maven
 /mvnw text eol=lf
+*.cmd text eol=crlf
 
 # Match the .editorconfig
 *           text=auto eol=lf
