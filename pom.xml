@@ -531,7 +531,7 @@
                 <version>${hutool-5.version}</version>
             </dependency>
 
-            <!-- peekaboo -->
+            <!-- tiny -->
             <dependency>
                 <groupId>io.wangk.tiny</groupId>
                 <artifactId>tiny-common</artifactId>

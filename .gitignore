@@ -27,8 +27,7 @@ node_modules/
 
 .flattened-pom.xml
 package-lock.json
-peekaboo-boot/peekaboo-boot-starter/src/main/resources/static/
-peekaboo-boot/peekaboo-boot-ui/node/*
-peekaboo-boot/peekaboo-boot-ui/dist/*
-peekaboo-boot/peekaboo-boot-ui/**/*.proxy.js
+ui/node/*
+ui/dist/*
+ui/**/*.proxy.js
 logs/*

@@ -1,0 +1,18 @@
+package io.wangk.tiny.component.web.core.response.advice.lifecycle.exception;
+
+import io.wangk.tiny.component.web.core.response.data.Response;
+
+/**
+ * 异常处理后的回调
+ *
+ * @author wangk
+ */
+public interface AfterControllerAdviceProcess {
+    /**
+     * 执行处理逻辑之后的回调
+     *
+     * @param response
+     * @param throwable
+     */
+    void call(Response response, Throwable throwable);
+}
