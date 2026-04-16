@@ -12,7 +12,6 @@
         <module>peekaboo-components</module>
         <module>peekaboo-server</module>
         <module>peekaboo-common</module>
-        <module>peekaboo-dist</module>
     </modules>
 
     <properties>
