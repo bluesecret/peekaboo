@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.wangk.peekaboo.server.admin.repository.mapper.SystemDeptMapper">
+
+    <select id="selectDeptTreeList" resultType="io.wangk.peekaboo.server.admin.api.dto.vo.SystemDeptTreeVo">
+      select id, parent_id, id as value, name as label  from system_dept where deleted = 0
+    </select>
+
+
+    <select id="selectDeptTreeDetailList" resultType="io.wangk.peekaboo.server.admin.api.dto.vo.SystemDeptTreeDetailVo">
+        select
+            system_dept.id,
+            system_dept.name,
+            system_dept.code,
+            system_dept.parent_id,
+            system_dept.sort,
+            system_dept.leader_user_id,
+            system_dept.phone,
+            system_dept.email,
+            su.nickname as leaderUserName,
+            system_dept.status
+        from system_dept
+        left join system_users su on su.id = system_dept.leader_user_id
+        where system_dept.deleted = 0
+        <if test="name != null and name != ''">
+            and system_dept.name like #{name}
+        </if>
+        <if test="status != null and status != ''">
+            and system_dept.status = #{status}
+        </if>
+        order by system_dept.sort asc
+
+    </select>
+
+
+    <select id="selectDeptUserList" resultType="io.wangk.peekaboo.server.admin.repository.entity.SystemUserDept">
+        select * from system_user_dept where  dept_id = #{id}
+    </select>
+
+    <delete id="deleteDeptUserList" >
+       delete from system_user_dept where dept_id = #{id}
+    </delete>
+
+    <select id="selectDeptTreeListStatus" resultType="io.wangk.peekaboo.server.admin.api.dto.vo.SystemDeptTreeVo">
+        select id, parent_id, id as value, name as label  from system_dept where deleted = 0 and status = 0
+    </select>
+</mapper>

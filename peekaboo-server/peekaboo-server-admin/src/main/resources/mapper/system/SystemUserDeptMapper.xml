@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.wangk.peekaboo.server.admin.repository.mapper.SystemUserDeptMapper">
+
+  <select id="getUserDeptListByUserId" resultType="io.wangk.peekaboo.server.admin.api.dto.vo.SystemUserDeptVo">
+      select system_user_dept.id,
+             system_user_dept.user_id,
+             system_user_dept.dept_id,
+             system_dept.name as deptName
+      from system_user_dept
+      left join system_dept on system_dept.id = system_user_dept.dept_id
+      where system_user_dept.user_id = #{id}
+            and system_dept.deleted = 0 and system_dept.status = 0 and system_user_dept.status = 0
+  </select>
+</mapper>

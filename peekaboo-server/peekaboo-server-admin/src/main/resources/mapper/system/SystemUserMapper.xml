@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.wangk.peekaboo.server.admin.repository.mapper.SystemUsersMapper">
+
+   <select id="selectByUsername" resultType="io.wangk.peekaboo.server.admin.api.dto.bo.SystemUserDto">
+        select u.id,
+               u.username,
+               u.nickname,
+               u.email,
+               u.sex,
+               u.password,
+               u.mobile,
+               u.status,
+               u.remark,
+               u.create_time,
+               u.update_time,
+               u.avatar,
+               u.deleted,
+               u.tenant_id
+        from system_users u
+        where u.username = #{username} and u.deleted = 0
+   </select>
+
+    <resultMap id="getUserListByDeptMap" type="io.wangk.peekaboo.server.admin.api.dto.vo.SystemUserVo">
+        <id column="id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="nickname" property="nickname"/>
+        <result column="email" property="email"/>
+        <result column="sex" property="sex"/>
+        <result column="mobile" property="mobile"/>
+        <result column="status" property="status"/>
+        <result column="remark" property="remark"/>
+        <result column="createTime" property="createTime"/>
+        <result column="updateTime" property="updateTime"/>
+        <result column="avatar" property="avatar"/>
+        <!-- 部门ID列表映射 -->
+        <collection property="deptIdList" ofType="String" column="deptIds" javaType="ArrayList">
+            <result column="deptIds"/>
+        </collection>
+        <!-- 部门名称列表映射 -->
+        <collection property="deptNameList" ofType="String" column="deptNames" javaType="ArrayList">
+            <result column="deptNames"/>
+        </collection>
+        </resultMap>
+
+    <select id="getUserListByDept" resultMap="getUserListByDeptMap" parameterType="io.wangk.peekaboo.server.admin.api.dto.bo.SystemUserDto">
+        SELECT  u.id,
+        u.username,
+        u.nickname,
+        u.email,
+        u.sex,
+        u.mobile,
+        u.status,
+        u.remark,
+        u.create_time,
+        u.update_time,
+        u.avatar,
+        d.id as deptIds,
+        d.name as deptNames
+        FROM system_users u
+        LEFT JOIN system_user_dept ud ON u.id = ud.USER_ID
+        LEFT JOIN system_dept d ON ud.DEPT_ID = d.ID
+        WHERE  u.deleted=0
+        and u.id IN
+        <foreach collection="systemUserDto.userIds" item="userId" open="(" separator="," close=")">
+            #{userId}
+        </foreach>
+        <choose>
+            <when test='systemUserDto.deptId.toString() == "0"'>
+                and 1=1
+            </when>
+            <otherwise>
+                AND d.ID  in
+                <foreach collection="systemUserDto.deptIds" item="deptId" open="(" separator="," close=")">
+                    #{deptId}
+                </foreach>
+            </otherwise>
+        </choose>
+
+    </select>
+
+
+</mapper>

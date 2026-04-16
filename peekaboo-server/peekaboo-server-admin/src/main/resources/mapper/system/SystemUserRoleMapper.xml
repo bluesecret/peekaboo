@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.wangk.peekaboo.server.admin.repository.mapper.SystemUserRoleMapper">
+
+
+    <select id="selectUserRoleList" resultType="io.wangk.peekaboo.server.admin.api.dto.bo.SystemUserRoleDTO">
+        select sur.id,
+               sur.user_id,
+               sur.role_id,
+               sur.creator,
+               sur.updater,
+               sur.update_time,
+               sur.deleted,
+               sur.role_id,
+               sur.status,
+               sr.name as roleName,
+               sr.code as code
+        from system_role sr
+                 left join system_user_role sur
+                           on sur.role_id=sr.id where sur.user_id=#{id} and sur.status=0
+
+    </select>
+    <select id="getUserRoleList" resultType="string">
+        select
+               sr.code as code
+        from system_user_role sur
+                 left join system_role sr
+                           on sur.role_id=sr.id where sur.user_id=#{id}
+    </select>
+    <select id="selectUserRolesById" resultType="io.wangk.peekaboo.server.admin.api.dto.bo.SystemUserRoleDTO">
+        select sur.id,
+               sur.user_id,
+               sur.role_id,
+               sr.name as roleName
+        from system_user_role sur
+                 left join system_role sr
+                           on sur.role_id=sr.id where sur.user_id=#{id} and sur.deleted=0 and sur.status=0
+    </select>
+
+
+    <select id="getBindUser"  resultType="io.wangk.peekaboo.server.admin.api.dto.vo.SystemUsersView">
+        select
+               su.id as id,
+               su.username as username,
+               su.nickname as nickname,
+               su.mobile as mobile,
+               su.email as email,
+               su.avatar as avatar,
+               su.sex as sex,
+               su.status as status,
+               su.login_ip as loginIp,
+               su.login_date as loginDate,
+               su.creator as creator,
+               su.create_time as createTime,
+               su.updater as updater,
+               su.update_time as updateTime,
+               su.remark as remark
+        from system_users su
+                left join  system_user_role sur
+                                on sur.user_id=su.id
+                           where sur.role_id=#{id} and su.deleted=0
+    </select>
+
+</mapper>

@@ -98,6 +98,7 @@
         <sa-token.version>1.39.0</sa-token.version>
 
         <bcprov-jdk15to18.version>1.78.1</bcprov-jdk15to18.version>
+        <friendly-id.version>1.1.0</friendly-id.version>
     </properties>
 
 
@@ -633,6 +634,12 @@
                 <groupId>io.wangk.peekaboo</groupId>
                 <artifactId>peekaboo-component-relation</artifactId>
                 <version>${revision}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.devskiller.friendly-id</groupId>
+                <artifactId>friendly-id</artifactId>
+                <version>${friendly-id.version}</version>
             </dependency>
 
         </dependencies>
